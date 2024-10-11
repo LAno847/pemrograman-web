@@ -1,0 +1,166 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header .banner {
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+main {
+    padding: 20px;
+}
+
+
+
+.product-img {
+    width: 150px;
+    height: auto;
+}
+
+.product-details {
+    margin-top: 10px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+
+
+/* Styling untuk banner */
+.banner {
+    position: relative; /* Untuk overlay dan teks berada di atas gambar */
+    width: 100%;
+    height: 250px; /* Anda bisa menyesuaikan tinggi banner */
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Gambar akan menyesuaikan ukuran tanpa distorsi */
+}
+
+/* Overlay transparan untuk efek kontras */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 150%;
+ 
+    display: flex;
+    justify-content: flex-start; /* Menempatkan teks di tengah secara horizontal */
+    align-items: center; /* Menempatkan teks di tengah secara vertikal */
+    padding-left: 20px; /* Sesuaikan jarak teks dari sisi kiri */
+}
+
+/* Styling untuk teks */
+.overlay h1 {
+    color: white;
+    font-size: 3rem;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Bayangan teks agar lebih terlihat */
+}
+
+
+
+/*posisi gambar*/
+.product-list {
+    display: flex; /* Mengubah tampilan menjadi flexbox */
+    flex-direction: column; /* Mengatur item agar ditampilkan secara vertikal */
+    gap: 20px; /* Jarak antar item */
+    align-items: flex-start; /* Mengatur item ke sisi kiri */
+    padding-left: 20px; /* Jarak dari sisi kiri */
+}
+
+
+
+/*posisi teks sebelah gambar*/
+.product-item {
+    display: flex; /* Mengatur item untuk menjadi flexbox */
+    gap: 20px; /* Jarak antara gambar dan deskripsi */
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%; /* Menyesuaikan lebar item */
+}
+
+.product-img-container {
+    flex-shrink: 0; /* Agar gambar tidak mengecil */
+}
+
+.product-img {
+    width: 250px; /* Atur lebar gambar sesuai kebutuhan */
+    height: auto; /* Atur tinggi gambar agar proporsional */
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column; /* Agar detail ditampilkan secara vertikal */
+    justify-content: center; /* Menyelaraskan detail di tengah */
+}
+
+
+.sidebar {
+    width: 200px; /* Lebar sidebar */
+    background-color: #f4f4f4; /* Warna latar belakang sidebar */
+    padding: 20px; /* Padding dalam sidebar */
+}
+
+.sidebar h2 {
+    margin-top: 0; /* Menghapus margin atas pada judul */
+}
+
+.sidebar ul {
+    list-style-type: none; /* Menghapus bullet dari daftar */
+    padding: 0; /* Menghapus padding default */
+}
+
+.sidebar ul li {
+    margin: 10px 0; /* Jarak antar item di sidebar */
+}
+
+.sidebar ul li a {
+    text-decoration: none; /* Menghapus garis bawah pada link */
+    color: #333; /* Warna teks */
+}
+
+.sidebar ul li a:hover {
+    color: #007BFF; /* Warna saat hover */
+}
